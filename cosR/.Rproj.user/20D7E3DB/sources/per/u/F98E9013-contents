@@ -1,0 +1,2 @@
+library(tinytex)
+xelatex("text.tex")

@@ -1,0 +1,22 @@
+library(roxygen2)
+roxygenize("D:/CBCode/rpackage/cosR/cosR")
+
+devtools::load_all()
+#usethis::use_mit_license()
+usethis::use_package("ggplot2", type = "Imports")
+usethis::use_package("tibble", type = "Imports")
+devtools::check()
+rm(list = c("CosPdf"))
+use_gpl_license()
+
+
+library(desc)
+library(testthat)
+#usethis::use_build_ignore()
+
+??rd2pdf
+R CMD Rd2pdf MyRpackage "D:/CBCode/rpackage/cosR/cosR"
+library(tinytex)
+
+
+tlmgr_repo(url = "http://mirrors.tuna.tsinghua.edu.cn/CTAN/")

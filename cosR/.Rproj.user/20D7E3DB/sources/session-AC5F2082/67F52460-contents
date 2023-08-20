@@ -1,0 +1,9 @@
+library(roxygen2)
+roxygenize("D:/cosR/cosR")
+
+devtools::load_all()
+usethis::use_mit_license()
+usethis::use_package("ggplot2", type = "Imports")
+usethis::use_package("tibble", type = "Imports")
+devtools::check()
+rm(list = c("CosPdf"))

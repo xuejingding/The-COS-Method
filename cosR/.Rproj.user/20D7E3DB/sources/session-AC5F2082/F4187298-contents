@@ -1,0 +1,10 @@
+N <- 64
+y <- seq(-5, 5, by = 0.1)
+a <- -6.0
+b <- 6.0
+NormChf <- function(u) {mu = 0;sigma = 1;return(exp(1i * mu * u - 0.5 * sigma ^ 2 * u ^ 2))}
+cosnorm <- CosPdf(y, a, b, N, NormChf)
+require("tibble")
+cosnorm <- tibble(x=y,y=cosnorm)
+nor <- CosPlot(data=cosnorm,x=x,y=y)
+nor

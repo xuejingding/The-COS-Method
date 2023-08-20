@@ -1,0 +1,9 @@
+\documentclass {ctexart}
+
+\begin{doucument}
+
+TinyTex可以正常使用吗
+
+$$
+e^{ix}=\cos x + i \sin x
+$$
