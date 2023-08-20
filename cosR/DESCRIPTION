@@ -1,0 +1,13 @@
+Package: cosR
+Type: Package
+Title: Use the Cos Method to Restore the Distribution
+Version: 0.2.0
+Authors@R: c(person("Xuejing", "Ding",email = "dxj21@mails.jlu.edu.cn", role = c("aut", "cre")))
+Maintainer: Xuejing Ding <dxj21@mails.jlu.edu.cn>
+Description: When you know the characteristic function of the distribution of some random variable, you can use the cos method to restore the PDF or CDF.
+Author: Xuejing Ding [aut, cre]
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: false
+RoxygenNote: 7.2.1
+Imports: ggplot2, tibble
